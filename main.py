@@ -7,6 +7,12 @@ class User:
     def Leave_chat_room(self):
         print("Left the Chat Room!")
 class Message:
-    pass
+    def __init__(self):
+        print("This is a Message Room!")
+    def message_the_bot(self,msg):
+        self.msg=msg
+    def display_message(self):
+        print(self.msg)
 class ChatRoom:
-    pass
+    def __init__(self,room_name,users_collection):
+        
