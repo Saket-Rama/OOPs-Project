@@ -14,5 +14,11 @@ class Message:
     def display_message(self):
         print(self.msg)
 class ChatRoom:
-    def __init__(self,room_name,users_collection):
-        
+    def __init__(self,room_name,users_collection,messages_collection):
+        self.room_name=room_name
+        self.users_collection=users_collection
+        self.messages_collection=messages_collection
+    def join_user(self):
+        User.join_chat_room()
+    def leave_user(self):
+        User.Leave_chat_room()
