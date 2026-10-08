@@ -4,7 +4,7 @@ class User:
         self.id=id
     def join_chat_room(self):
         print("You have joined a Chat room!")
-    def Leave_chat_room(self):
+    def leave_chat_room(self):
         print("Left the Chat Room!")
 class Message:
     def __init__(self):
