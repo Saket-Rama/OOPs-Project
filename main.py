@@ -26,5 +26,7 @@ class ChatRoom:
         print(f"{user_name} left the {self.room_name}!")
 
 c1=ChatRoom("ABC")
+c2=ChatRoom("ABC")
 c1.join_user("Saket")
+c2.join_user("Rama")
 c1.leave_user("Saket")
