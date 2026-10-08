@@ -19,6 +19,12 @@ class ChatRoom:
         self.messages_collection=[]
         self.room_name=room_name
     def join_user(self,user_name):
-        self.user_name=self.user_collection.append(user_name)
+        self.user_collection.append(user_name)
+        print(f"{user_name} joined {self.room_name}!")
     def leave_user(self,user_name):
-        self.user_name=self.user_collection.append(user_name)
+        self.user_collection.remove(user_name)
+        print(f"{user_name} left the {self.room_name}!")
+
+c1=ChatRoom("ABC")
+c1.join_user("Saket")
+c1.leave_user("Saket")
